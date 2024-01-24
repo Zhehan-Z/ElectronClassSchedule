@@ -1,9 +1,4 @@
 @font-face {
-    font-family: PingFang;
-    src: url("../font/PINGFANG.TTF");
-}
-
-@font-face {
     font-family: JetB;
     src: url("../font/JETBRAINSMONO-BOLD.TTF");
 }
@@ -17,6 +12,11 @@
 @font-face {
     font-family: Ali;
     src: url("../font/AlimamaDongFangDaKai.TTF");
+}
+
+@font-face {
+    font-family: SourceHanSansCN-Bold;
+    src: url("../font/SourceHanSansCN-Bold.otf");
 }
 
 * {
@@ -65,7 +65,7 @@
 
 .upcoming {
     color: rgba(0, 255, 10, 1);
-    animation: highlightUpcoming 1.5s linear;
+    animation: highlightUpcoming 1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -74,11 +74,7 @@
         color: rgba(255, 255, 255, 1)
     }
 
-    40% {
-        color: rgba(0, 255, 10, 1);
-    }
-
-    60% {
+    50% {
         color: rgba(0, 255, 10, 1);
     }
 
@@ -111,7 +107,7 @@
     display: inline;
     font-size: 14px;
     color: rgba(255, 255, 255, 1);
-    font-family: PingFang;
+    font-family: SourceHanSansCN-Bold;
 }
 
 .countdownContainer {
@@ -135,13 +131,14 @@
     border-radius: 16px;
     padding: 5px 12px;
     font-size: 28px;
+    transition: all 2s;
 }
 
 .currentClass {
     color: rgba(0, 255, 10, 1);
     display: inline;
-    font-family: PingFang;
-    transition: all 1s;
+    font-family: SourceHanSansCN-Bold;
+    transition: all 2s;
     font-weight: bold;
 }
 
