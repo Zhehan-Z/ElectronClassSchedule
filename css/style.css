@@ -96,13 +96,13 @@
 
 .rightSidebar {
     right: 0;
-    color: #419b39;
+    color: #4bd429;
     transform: translateX(calc(100% + var(--container-space)));
 }
 
 .leftSidebar {
     left: 0;
-    color: rgb(18, 153, 187);
+    color: rgb(42, 200, 240);
     transform: translateX(calc(-100% - var(--container-space)));
 }
 
