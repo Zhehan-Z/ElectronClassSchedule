@@ -134,8 +134,10 @@ const _scheduleConfig = {
     // 分隔线: 课表中区分不同时段课程的分隔线配置，外层key（冒号前）部分与上面timeable相同
     // value（冒号后）为分隔线所在位置的前一个课程序号(从0开始的数字[不带''])
     divider: {
-        workday: [4, 8],
-        weekend: [3]
+        type1: [5, 1, 5, 2],
+        type2: [5, 1, 4, 2],
+        type3: [5, 1, 4, 2],
+        weekend: [1]
     },
 
     // 每日课程：配置星期几对应第几堂课是什么课，星期顺序不可以更改(星期日/一/二/三/四/五/六)，你可以对classList后面内容进行更改
@@ -177,7 +179,7 @@ const _scheduleConfig = {
             Chinese: '五',
             English: 'FRI',
             classList: ['语', '数', '化', '外@走', '外@走', '自@午', '生', '政', '史', '选@走', '自@一', '自@二'],
-            timetable: 'workday'
+            timetable: 'type3'
         },
         {
             Chinese: '六',
