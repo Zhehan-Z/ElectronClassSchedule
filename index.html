@@ -97,7 +97,7 @@
 
   function setCountdownerContent() {
     currentFullName.innerText = scheduleData.currentHighlight.fullName;
-    currentFullName.style.color = scheduleData.currentHighlight.type === 'current' ? 'rgba(0, 255, 10, 1)' : 'rgba(255, 255, 5, 1)'
+    currentFullName.style.color = scheduleData.currentHighlight.type === 'current' ? 'rgba(255, 166, 0, 1)' : 'rgba(255, 166, 0, 1)'
     countdownText.innerText = scheduleData.currentHighlight.countdownText;
     if (scheduleData.currentHighlight.type === 'current') {
       if (isClassCountdown) {
