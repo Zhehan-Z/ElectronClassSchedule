@@ -12,6 +12,7 @@ const _scheduleConfig = {
     // 若存在多个课程简写相同，需要加以区分，可以为简写添加下角标，使用@分隔，如'自@语'，@前为简写，@后为下角标
     // 要求必须做到覆盖完全，否则可能会保错
     subject_name: {
+        '无': '无课程',
         '自': '自习',
         '班': '班会',
         '自@午': '午自习',
@@ -128,17 +129,17 @@ const _scheduleConfig = {
             '21:30-23:59': '晚安',
         },
         weekend: {
-            '00:00-23:59': '今日无课程',
+            '00:00-23:59': 0,
         }
     },
 
     // 分隔线: 课表中区分不同时段课程的分隔线配置，外层key（冒号前）部分与上面timeable相同
     // value（冒号后）为分隔线所在位置的前一个课程序号(从0开始的数字[不带''])
     divider: {
-        type1: [5, 1, 5, 2],
-        type2: [5, 1, 4, 2],
-        type3: [5, 1, 4, 2],
-        weekend: [1]
+        type1: [4, 5, 10],
+        type2: [4, 5, 9],
+        type3: [4, 5, 9],
+        weekend: []
     },
 
     // 每日课程：配置星期几对应第几堂课是什么课，星期顺序不可以更改(星期日/一/二/三/四/五/六)，你可以对classList后面内容进行更改
@@ -149,7 +150,7 @@ const _scheduleConfig = {
         {
             Chinese: '日',
             English: 'SUN',
-            classList: [],
+            classList: ['无'],
             timetable: 'weekend'
         },
         {
@@ -185,7 +186,7 @@ const _scheduleConfig = {
         {
             Chinese: '六',
             English: 'SAT',
-            classList: [],
+            classList: ['无'],
             timetable: 'weekend'
         }
     ],
