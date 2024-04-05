@@ -128,7 +128,7 @@ ipcMain.on('getWeekIndex', (e, arg) => {
             icon: basePath + 'image/github.png',
             label: '源码仓库',
             click: () => {
-                shell.openExternal('https://github.com/EnderWolf006/ElectronClassSchedule');
+                shell.openExternal('https://github.com/Zhehan-Z/ElectronClassSchedule');
             }
         },
         {
@@ -193,7 +193,7 @@ ipcMain.on('getWeekIndex', (e, arg) => {
     ]
     template[arg].checked = true
     form = Menu.buildFromTemplate(template)
-    tray.setToolTip('电子课表 - by lsl')
+    tray.setToolTip('NFLS 电子课表')
     function trayClicked() {
         tray.popUpContextMenu(form)
     }
