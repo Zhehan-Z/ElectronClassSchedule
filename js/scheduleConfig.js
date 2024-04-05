@@ -138,8 +138,7 @@ const _scheduleConfig = {
     divider: {
         type1: [4, 5, 10],
         type2: [4, 5, 9],
-        type3: [4, 5, 9],
-        weekend: []
+        type3: [4, 5, 9]
     },
 
     // 每日课程：配置星期几对应第几堂课是什么课，星期顺序不可以更改(星期日/一/二/三/四/五/六)，你可以对classList后面内容进行更改
